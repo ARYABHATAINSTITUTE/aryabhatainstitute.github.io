@@ -1,0 +1,1 @@
+console.log('Aryabhata Institute site loaded');
