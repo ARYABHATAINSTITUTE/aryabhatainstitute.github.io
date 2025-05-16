@@ -1,18 +1,22 @@
-// Mobile nav toggle
-const navToggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector(".nav");
-
-navToggle.addEventListener("click", () => {
-  nav.classList.toggle("open");
-});
+// script.js
 
 // Smooth scroll for nav links
-document.querySelectorAll('.nav a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    nav.classList.remove("open");
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
+
+// Mobile nav toggle
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+}
