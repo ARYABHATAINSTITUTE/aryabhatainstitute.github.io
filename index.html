@@ -1,32 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PTR'S Aryabhata Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PTR'S Aryabhata Institute - Home</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>PTR'S Aryabhata Institute</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="courses.html">Courses</a>
-      <a href="facilities.html">Facilities</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">PTR'S Aryabhata Institute</a>
+      <nav class="nav" id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
-  <main>
-    <section>
-      <h2>Welcome to PTR'S Aryabhata Institute</h2>
-      <p>Empowering students for JEE, NEET, and EAPCET success.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 PTR'S Aryabhata Institute</p>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Welcome to PTR'S Aryabhata Institute</h1>
+      <p>Your Gateway to Success in JEE, NEET, EAMCET & Intermediate</p>
+      <a href="contact.html" class="btn-primary">Enroll Now</a>
+    </div>
+  </section>
+
+  <section class="highlights container">
+    <div class="highlight-card">
+      <h3>Expert Faculty</h3>
+      <p>Experienced teachers focused on results.</p>
+    </div>
+    <div class="highlight-card">
+      <h3>Comprehensive Courses</h3>
+      <p>JEE, NEET, EAMCET & Intermediate coaching.</p>
+    </div>
+    <div class="highlight-card">
+      <h3>State-of-the-art Facilities</h3>
+      <p>Modern classrooms & study halls.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 PTR'S Aryabhata Institute, Khammam. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
